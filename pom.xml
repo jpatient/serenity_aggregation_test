@@ -4,6 +4,12 @@
 	<groupId>serenity_aggregation_test</groupId>
 	<artifactId>serenity_aggregation_test</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<properties>
+	   <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	   <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+	   <serenity.version>1.2.2</serenity.version>
+	   <serenity-cucumber.version>1.1.23</serenity-cucumber.version>
+	</properties>
 	<build>
 		<sourceDirectory>src</sourceDirectory>
 		<plugins>
@@ -48,12 +54,12 @@
 			<plugin>
 				<groupId>net.serenity-bdd.maven.plugins</groupId>
 				<artifactId>serenity-maven-plugin</artifactId>
-				<version>1.2.2-rc.1</version>
+				<version>${serenity.version}</version>
 				<dependencies>
 					<dependency>
 						<groupId>net.serenity-bdd</groupId>
 						<artifactId>serenity-core</artifactId>
-						<version>1.2.2-rc.1</version>
+						<version>${serenity.version}</version>
 					</dependency>
 				</dependencies>
 				<executions>
@@ -72,12 +78,12 @@
 		<dependency>
 			<groupId>net.serenity-bdd</groupId>
 			<artifactId>serenity-core</artifactId>
-			<version>1.2.2-rc.1</version>
+			<version>${serenity.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>net.serenity-bdd</groupId>
 			<artifactId>serenity-cucumber</artifactId>
-			<version>1.1.14</version>
+			<version>${serenity-cucumber.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.assertj</groupId>
